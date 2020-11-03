@@ -13,14 +13,15 @@ const MyVenders = mongoose.model('Venders')
 const MyItems = mongoose.model('Items')    
 const MyAccounts = mongoose.model('Accounts')    
 const PORT = process.env.PORT || 8080
-const path = require('path')
+const path = require('path');
+const { Console } = require('console');
 mongoose.connect( process.env.MONGODB_URI || mongourl , {
     useNewUrlParser : true
 });
 
-
 app.use(bodyParser.urlencoded({ extended : false }))
 app.use(bodyParser.json())
+// app.use('/',() Console.log("?? // ??"))
 
 app.get('/CheckUpdate',(req,res)=>{
     MyVenders.update({"Name":"Aqib Memon Check"},{"Name":"RETURNED"}).then(res.send("UPDATE"))

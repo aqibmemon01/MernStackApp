@@ -1,23 +1,19 @@
+const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
-const {mongourl} = require('./Config/Keys');
-const bodyParser = require('body-parser');
+
+
 const AddCustomer = require('./Modals/AddCustomer')
 const AddVender = require('./Modals/AddVender')
 const AddItem = require('./Modals/AddItem')
 const AddAccount = require('./Modals/AddAccount')
-
 
 const MyCustomers = mongoose.model('Customers')    
 const MyVenders = mongoose.model('Venders')    
 const MyItems = mongoose.model('Items')    
 const MyAccounts = mongoose.model('Accounts')    
 
-mongoose.connect(mongourl);
 
-app.use(bodyParser.urlencoded({ extended : false }))
-app.use(bodyParser.json())
 
 
 
@@ -140,5 +136,3 @@ app.get('/LoadAccounts',(req, res)=>{
 // app.get('/hey', (req, res) => res.send('ho!'))
 
 
-
-app.listen(8080)

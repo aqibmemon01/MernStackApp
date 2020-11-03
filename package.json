@@ -2,7 +2,7 @@
   "name": "mynode",
   "version": "1.0.0",
   "description": "",
-  "main": "MyNode.js",
+  "main": "ForDeploy.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",

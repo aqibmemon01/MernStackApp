@@ -1,0 +1,129 @@
+.AddItem{
+  margin-top: 60px;
+  text-align: center; 
+}
+
+.AddItem > Button{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.MyDrop{
+ padding: 0 !important;
+ margin: -25px -25px -15px -15px !important;
+ /* margin-top: -10px !important; */
+ /* height: 10px !important; */
+}
+.myauto{
+  display: inline-block;
+}
+.Margintop{
+  margin-top: 12px;
+}
+.CheckData{
+  position:absolute;
+  top: 60px;
+  right: 10px;
+}
+.NonActive{
+  display:none !important;
+}
+.MyLoader{
+ position: fixed;
+ top:48%;
+ left:45%;
+ height: 100px !important;
+ width: 100px !important;
+}
+.PurchaseItemDiv{
+  height: 225px;
+  width: 1000px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 10px;
+  scrollbar-width: 0;  
+}
+.AddPurchaseRow{
+  display: inline-block;
+  height: 55px;
+}
+.PurchaseIndex{
+  /* padding-top:20px ;
+  font-size: 20px; */
+  background-color: #4CAF50;
+  display: inline-block;
+  height: 55px;
+  position:relative;
+  top:20px;
+  /* font-size: 20px; */
+  
+}
+
+
+
+
+
+
+
+
+
+     /* IMPORT FROM W3SCHOOL */
+     .topnav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .topnav span {
+      color: #f2f2f2;
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+     /* OTHER */
+    .customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1px;
+    }
+    
+    .customers td, .customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    .customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    .customers tr:hover {background-color: #ddd;}
+    
+    .customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }

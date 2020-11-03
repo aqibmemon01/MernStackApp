@@ -1,0 +1,75 @@
+.PurchaseDiv{
+    margin: -15px 10px 0px 10px;
+    width: 700PX;
+}
+
+
+.PurchaseDiv > h1{
+    font-size: 45px;
+    border-bottom: 3px solid grey;
+    font-family:'Times New Roman', Times, serif
+}
+.PurchaseDiv > h4{
+    text-align: center;
+    margin-top: -18px;
+}
+.PurchaseDiv > Table{
+    width: 670px;
+    margin-left: 15px;
+    position: absolute;
+    top:320px;
+    left: 20px;
+    border-collapse: collapse;
+}
+.PurchaseDiv > Table > tr > th{
+    background-color: rgb(219, 214, 214);
+    margin: 0px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
+    border: 2px solid gray;
+    
+}
+/* .PurchaseDiv > Table > tbody{
+    padding: 5px;
+    margin: 10px 0 50px 0;
+} */
+.PurchaseDiv > Table > tbody > tr > td{
+   text-align: center; 
+   border: 1px solid black;
+   
+}
+.PurchaseDiv > Table > tfoot > tr > .fd{
+    text-align: center; 
+    font-weight: bold;
+    background-color: rgb(219, 214, 214);
+    border: 2px solid grey;
+ }
+.Firstpart{
+    position: absolute;
+    top:212px;
+    left: 20px;
+}
+.Secpart{
+    position: absolute;
+    top:212px;
+    left: 470px;
+}
+.SignLine{
+    position: relative;
+    top:300px;
+    left:450px;
+    width:200px;
+    border-top: 2px solid black;
+}
+
+
+
+@media print{
+    body{
+      visibility: hidden;
+    }
+    .PurchaseDiv{
+      visibility: visible;
+      position: absolute;
+      top:40px;
+    }
+  }
